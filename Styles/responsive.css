@@ -60,5 +60,14 @@
     {
         padding: 0px;
     }
+    .services-cards-row
+    {
+        gap: 30px;
+    }
+    .services-card
+    {
+        margin: 20px;
+        padding: 30px 10px 30px 10px;
+    }
     
 }

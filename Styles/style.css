@@ -4,6 +4,7 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body
@@ -345,6 +346,11 @@ a{
   margin-top: 30px;
   position: relative;
   z-index: 22;
+  display: inline-block;
+}
+.redirect-freelance a
+{
+  display: inline;
 }
 .redirect-freelance:hover i,
 .redirect-freelance:hover a
@@ -549,6 +555,7 @@ a{
 }
 .my-specializations
 {
+  text-align: center;
   color: white;
   font-size: 40px;
   letter-spacing: 2px;
@@ -559,18 +566,19 @@ a{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 70px;
 } 
 .services-card
 {
   border: 1px solid white;
   border-radius: 10px;
-  padding: 40px 40px 40px 40px;
+  padding: 40px 20px 40px 20px;
   flex-wrap: wrap;
   display: flex;
-  margin: 20px;
 }
 .services-card-image{
-  min-width: 60px;
   float: left;
 }
 .services-card-title
@@ -588,7 +596,6 @@ a{
 .services-card-content
 {
   padding-left: 20px;
-  width: 300px;
 }
 .line{
   margin-top: 30px;
@@ -628,4 +635,49 @@ a{
 {
   color: #C9F31D;
   transform: translateX(10px)
+}
+
+.hire-me-card h1{
+  color: white;
+  font-size: 70px;
+}
+.hire-me-card
+{
+  border-radius: 10px;
+  padding: 40px 20px 40px 20px;
+  text-align: center;
+  margin: 20px;
+  transition: 0.5s ease-in-out;
+  position: relative;
+  border: 1px solid white;
+}
+.hire-me-card:hover{
+  background-color: #C9F31D;
+  color: black;
+  transition: 0.5s ease-in-out;
+}
+.hire-me-card:hover{
+  transform: scale(1.1);
+  transition: 0.5s ease-in-out;
+}
+.hire-me-card:hover h1 {
+  color: black;
+  transition: 0.5s ease-in-out;
+}
+.hire-me-card:hover span i{
+  color: black;
+  transition: 0.5s ease-in-out;
+}
+.hire-me-card span
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.hire-me-card span i{
+  font-size: 40px;
+  transform: rotate(45deg);
+  color: white;
+  transition: 0.5s ease-in-out;
 }
