@@ -423,6 +423,7 @@ a{
   position: relative;
   background: linear-gradient(to right, #C9F31D, #fff000);
   background-clip: text;
+  -webkit-background-clip: text;
 }
 
 .marque-slider span{
@@ -557,7 +558,6 @@ a{
 {
   display: flex;
   flex-wrap: wrap;
-  gap: 50px;
   justify-content: center;
 } 
 .services-card
@@ -567,6 +567,7 @@ a{
   padding: 40px 40px 40px 40px;
   flex-wrap: wrap;
   display: flex;
+  margin: 20px;
 }
 .services-card-image{
   min-width: 60px;
