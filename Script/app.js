@@ -57,6 +57,9 @@ sidebarCloseIcon.addEventListener("click", ()=>
     const text =aboutparagraph.innerText; 
     const spanned = text.split("").map(elements =>
     {
+        if (elements === " ") {
+            return " ";
+        }
         let shayan = `<span>${elements}</span>`
         return shayan;
     }
