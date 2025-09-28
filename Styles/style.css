@@ -452,7 +452,7 @@ a{
 }
 .marque-slider marquee
 {
-  padding: 10px;
+  padding: 15px;
   background-color:var(--primary-color);
 }
 .marque-slider i{
