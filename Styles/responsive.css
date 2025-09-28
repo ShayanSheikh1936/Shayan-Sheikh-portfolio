@@ -37,7 +37,11 @@
         height: 300px;
         margin: 100px 0px 30px 0px;
     }
-
+    .video-play
+    {
+        margin-top:10px ;
+        padding: 0;
+    } 
 }
 @media screen and (max-width: 425px) {
     .navbar-toggle-icon{
@@ -69,5 +73,52 @@
         margin: 20px;
         padding: 30px 10px 30px 10px;
     }
+    .section-heading
+    {
+        font-size:25px ;
+    }
+    .my-specializations
+    {
+        font-size: 30px;
+    }
+    .section-strike{
+        width: 250px;
+    }
+    .section-strike1
+    {
+        width: 350px;
+    }
+    .section-heading1
+    {
+        font-size: 25px;
+    }
+    .hire-me-card
+    {
+        padding: 20px 10px 20px 10px;
+    }
+    .hire-me-card h1{
+        font-size: 50px;
+    }
+    .projects-card img {
+        width: 300px;
+        height: 300px;
+    }
+    .projects-card h3
+    {
+        font-size: 20px;
+    }
+    .projects-card h1
+    {
+        font-size: 30px;
+    }
+    .projects-card .projects-card-popup{
+
+     width: 40px;
+     height: 40px;
+    }
+    .projects-card .projects-card-popup i{
+        font-size: 25px;
+    }
+  
     
 }
