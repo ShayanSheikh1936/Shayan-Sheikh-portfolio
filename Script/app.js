@@ -64,6 +64,30 @@ sidebarCloseIcon.addEventListener("click", ()=>
         return shayan;
     }
     ).join("")
-    console.log(spanned);
     aboutparagraph.innerHTML = spanned;
+    const allBtns = document.querySelectorAll(".btn");
     
+    allBtns.forEach((btn)=>
+    {
+        
+        btn.addEventListener("click", ()=>
+        {
+           if(btn.classList.contains("about-btn"))
+           {
+            console.log("about");
+           }
+           else if(btn.classList.contains("education-btn"))
+           {
+            console.log("edu");
+           }
+           else if(btn.classList.contains("skills-btn"))
+           {
+            console.log("skill");
+           }
+           else if(btn.classList.contains("hobbies-btn"))
+           {
+            console.log("hobbies");
+           }
+           
+        })
+    })
