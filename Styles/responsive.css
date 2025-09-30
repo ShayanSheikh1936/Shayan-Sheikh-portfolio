@@ -42,6 +42,21 @@
         margin-top:10px ;
         padding: 0;
     } 
+    .click-about
+    {
+        flex-wrap: wrap;
+    }
+    .auther-about-image img
+    {
+      width: 600px;
+      height: 600px;
+      margin-bottom: 30px;
+    }
+    .auther-about-image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 @media screen and (max-width: 425px) {
     .navbar-toggle-icon{
@@ -119,6 +134,18 @@
     .projects-card .projects-card-popup i{
         font-size: 25px;
     }
-  
+  .about-buttons
+  {
+    gap: 20px;
+  }
+  .auther-about-image img
+  {
+    width: 400px;
+    height: 400px;
+    margin-bottom: 30px;
+  }
+  .auther-about-image img{
+    margin-right: 0;
+  }
     
 }

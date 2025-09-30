@@ -840,3 +840,84 @@ a{
 .round-click-more-work:hover{
   transition: 0.5s ease-in-out;
 }
+.about-buttons
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+.about-buttons button
+{
+  padding: 10px 35px 10px 35px;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: 0.5s ease-in-out;
+  font-size: 19px;
+  font-weight: 400;
+  background-color: var(--primary-color);
+}
+.about-buttons button:hover
+{
+  background-color: var(--primary-color);
+  color: black; 
+}
+.click-about
+{
+display: flex;
+margin: 0 65px 0 65px;
+}
+.auther-about-image img{
+  margin-right: 30px;
+}
+.auther-about-content
+{
+  color: var(--font-color);
+  display: flex;
+  flex-direction: column;
+}
+.auther-about-content p{
+  padding-top: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  word-spacing: 2px;
+}
+.auther-about-cards
+{
+  display: flex;
+  flex-wrap: wrap;
+  padding-top:20px;
+}
+.auther-about-card-info{
+  margin-right:60px;
+  margin-bottom: 20px;
+  padding: 20px 50px 20px 0;
+ cursor: pointer;
+  flex-direction: column;
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  padding-left: 10px;
+  border-radius: 10px;
+  background: var(--primary-color);
+}
+.auther-about-card-info label{
+  font-size: 19px;
+  color: var(--secondary-color);
+  font-weight:500 ;
+}
+.auther-about-card-info a{
+  font-size: 17px;
+  color: var(--secondary-color);
+}
+.social-icons i{
+  font-size: 28px;
+  color: var(--secondary-color);  
+}
+.auther-about
+{
+
+}
