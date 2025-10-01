@@ -65,6 +65,9 @@ sidebarCloseIcon.addEventListener("click", ()=>
     }
     ).join("")
     aboutparagraph.innerHTML = spanned;
+    const myEducationSection = document.querySelector(".my-education-section")
+    const mySkillsSection = document.querySelector(".my-skills-section")
+    const myAboutSection =document.querySelector(".my-about-section")
     const allBtns = document.querySelectorAll(".btn");
     
     allBtns.forEach((btn)=>
@@ -74,15 +77,21 @@ sidebarCloseIcon.addEventListener("click", ()=>
         {
            if(btn.classList.contains("about-btn"))
            {
-            console.log("about");
+            myAboutSection.style.display = "inline-flex";
+            mySkillsSection.style.display = "none";
+            myEducationSection.style.display ="none"
            }
            else if(btn.classList.contains("education-btn"))
            {
-            console.log("edu");
+            myAboutSection.style.display = "none";
+            mySkillsSection.style.display = "none";
+            myEducationSection.style.display ="inline-flex"
            }
            else if(btn.classList.contains("skills-btn"))
            {
-            console.log("skill");
+            myAboutSection.style.display = "none";
+            mySkillsSection.style.display = "inline-flex";
+            myEducationSection.style.display ="none"
            }
            else if(btn.classList.contains("hobbies-btn"))
            {

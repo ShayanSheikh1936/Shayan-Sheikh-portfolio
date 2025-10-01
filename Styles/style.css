@@ -918,6 +918,10 @@ input:checked+.slider:before {
 .click-about {
   display: flex;
   margin: 0 65px 0 65px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  width: 80%;
    
 }
 
@@ -929,6 +933,7 @@ input:checked+.slider:before {
   color: var(--font-color);
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .auther-about-content p {
@@ -936,6 +941,7 @@ input:checked+.slider:before {
   font-size: 20px;
   font-weight: 500;
   word-spacing: 2px;
+  padding-bottom: 10px;                     
 }
 
 .auther-about-cards {
@@ -945,15 +951,15 @@ input:checked+.slider:before {
 }
 
 .auther-about-card-info {
-  margin-right: 60px;
+  margin-right: 10px;
   margin-bottom: 20px;
-  padding: 20px 50px 20px 0;
+  padding: 20px;
   cursor: pointer;
   flex-direction: column;
   display: flex;
   align-items: flex-start;
   gap: 15px;
-  padding-left: 10px;
+  
   border-radius: 10px;
   background: var(--primary-color);
 }
@@ -976,10 +982,20 @@ input:checked+.slider:before {
 
 
 /* ---------------------------------------------------------------- */
+.timeline-arrow
+{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--primary-color);
+  font-size: 30px;
+  cursor: pointer;
+  animation: moving-arrow-top 2s forwards infinite linear;
+}
 .timeline-section {
   overflow: hidden;
-  height: 600px;
-  width: 80%;
+  height: 300px;
   margin-top: 30px;
   overflow-y: scroll;
   scroll-behavior: smooth;
@@ -996,10 +1012,10 @@ input:checked+.slider:before {
 }
 
 .timeline {
-  position: relative;
   margin-left: 20px;
   padding-left: 40px;
   border-left: 3px solid var(--primary-color);
+  position: relative;
 }
 
 .timeline-item {
@@ -1093,11 +1109,78 @@ input:checked+.slider:before {
   justify-content: center;
 }
 
-.inner-circle img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50px;
-}
 .inner-circle i {
   font-size: 45px;
+  display: inline;
  }
+.inner-circle img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: inline;
+ }
+ .inner-circle:hover img,
+ .inner-circle:hover i
+ {
+  opacity: 0px;
+  visibility: hidden;
+  display: none;
+ }
+ .skills-cards-container{
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  flex-direction: column;
+ }
+ .skills-card
+ {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  color: var(--font-color);
+  cursor: pointer;
+  gap: 15px;
+ }
+.skills-card p{
+  font-weight: 600;
+  font-size: 18px;
+  display: none;
+  transition: transform 3s ease;
+}
+.inner-circle:hover p
+{
+  display: inline;
+  transition: 3s ease;
+}
+.skills-card h3{
+  font-size: 15px;
+  font-weight: 300;
+}
+ .skills-line
+ {
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary-color);
+ }
+ .merge-skills
+ {
+  display: flex;
+  gap: 10px;
+ }
+ .card-skills
+ {
+  color: var(--primary-color);
+ }
+.skills-card-container
+{
+  height: 280px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.skills-card-container::-webkit-scrollbar
+{
+  display: none;
+}

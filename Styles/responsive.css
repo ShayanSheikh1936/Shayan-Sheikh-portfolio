@@ -140,12 +140,26 @@
   }
   .auther-about-image img
   {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     margin-bottom: 30px;
   }
   .auther-about-image img{
     margin-right: 0;
   }
-    
+  .click-about 
+  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .auther-about-content p {
+    font-size: 16px;
+  }
+  .auther-about-card-info
+  {
+    margin-right: 3px;
+    padding: 10px;
+  }
 }
