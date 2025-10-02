@@ -63,10 +63,10 @@
     }
     .working-process-card ul {
         width: 350px;
-    };
-    .contact-section-2
+    }
+    .contact-section
     {
-        margin: 0 0 0 0;
+        gap: 50px;
     }
     }
 @media screen and (max-width: 425px) {

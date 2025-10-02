@@ -1237,6 +1237,7 @@ input:checked+.slider:before {
 }
 .contact-section
 {
+  padding: 20px 0 20px 0;
   display: flex;
   gap: 150px;
   flex-wrap: wrap;
@@ -1296,7 +1297,6 @@ footer{
 .contact-section-2
 {
   color: var(--font-color);
-  margin: 0px 0px 0 0px;
 }
 .contact-section-2 form input,
 .contact-section-2 form textarea
@@ -1305,7 +1305,7 @@ footer{
   padding-bottom: 20px;
   background-color: transparent;
   /* margin: 15px 0 15px 0; */
-  padding: 20px;
+  padding: 20px 0 20px 0;
   border: 2px solid var(--font-color);
   border-top: 2px;
   border-left:2px;
