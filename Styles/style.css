@@ -1310,6 +1310,19 @@ footer{
   border-top: 2px;
   border-left:2px;
   border-right:2px;
+  color: var(--font-color);
+  font-size: 16px;
+}
+.contact-section-2 form input:focus,
+.contact-section-2 form textarea:focus
+{
+  border: 2px solid var(--font-color);
+  border-top: 2px;
+  border-left: 2px;
+  border-right: 2px;
+  outline: none;
+
+
 }
 .combine-email-phone
 {
