@@ -64,7 +64,11 @@
     .working-process-card ul {
         width: 350px;
     };
-}
+    .contact-section-2
+    {
+        margin: 0 0 0 0;
+    }
+    }
 @media screen and (max-width: 425px) {
     .navbar-toggle-icon{
         display: block;

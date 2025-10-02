@@ -100,3 +100,11 @@ sidebarCloseIcon.addEventListener("click", ()=>
            
         })
     })
+const currentYear = document.getElementById("current-year")
+
+const year = new Date();
+let fullYear = year.getFullYear();
+console.log(year);
+currentYear.innerText = fullYear;
+
+   
