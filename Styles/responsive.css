@@ -57,6 +57,13 @@
         justify-content: center;
         align-items: center;
     }
+    .working-process-card
+    {
+        padding: 20px 5px 20px 5px;
+    }
+    .working-process-card ul {
+        width: 350px;
+    };
 }
 @media screen and (max-width: 425px) {
     .navbar-toggle-icon{

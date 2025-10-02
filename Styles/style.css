@@ -538,7 +538,7 @@ input:checked+.slider:before {
 }
 
 .section-heading {
-  font-size: 35px;
+  font-size: 25px;
   color: var(--primary-color);
   font-weight: 600;
   position: relative;
@@ -548,7 +548,7 @@ input:checked+.slider:before {
 }
 
 .section-heading1 {
-  font-size: 35px;
+  font-size: 25px;
   color: var(--primary-color);
   font-weight: 600;
   position: relative;
@@ -559,7 +559,7 @@ input:checked+.slider:before {
 
 .section-strike1 {
   position: absolute;
-  width: 500px;
+  width: 350px;
   height: 1px;
   background: var(--primary-color);
 
@@ -582,7 +582,7 @@ input:checked+.slider:before {
 .section-strike {
   z-index: -20;
   position: absolute;
-  width: 350px;
+  width: 290px;
   height: 1px;
   background-color: var(--primary-color);
 }
@@ -1183,4 +1183,55 @@ input:checked+.slider:before {
 .skills-card-container::-webkit-scrollbar
 {
   display: none;
+}
+.working-process-container
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.working-process-card
+{
+  position: relative;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: transparent;
+  border: 2px solid var(--primary-color);
+  padding: 25px;
+  border-radius: 10px;
+  color: var(--font-color);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.working-process-card h1
+{
+  font-size: 29px;
+}
+.working-process-card ul{
+  padding-left: 20px;
+}
+.working-process-card p{
+  width: 300px;
+}
+.working-process-card li::marker
+{
+  color: var(--primary-color);
+  font-size: 20px;
+}
+.working-process-card-circle{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  transform: translate(90%, 90%);
+  transition: 1s ease;
+}
+.working-process-card:hover .working-process-card-circle{
+  transform: translate(30%, 30%);
+  transition: 1s ease;
 }
