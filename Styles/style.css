@@ -1328,14 +1328,14 @@ footer{
 {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 .contact-section-2 form
 {
   display: flex;  
   flex-direction: column;
   gap: 40px;
-  width: 100%;
 }
 
 .contact-section-2 form input::placeholder, 
