@@ -1261,6 +1261,7 @@ input:checked+.slider:before {
   background: linear-gradient(to right, var(--primary-color), #fff000) ;
   color: transparent;
   background-clip: text;
+  -webkit-background-clip: text;
 }
 .whatsapp-redirect
 {
