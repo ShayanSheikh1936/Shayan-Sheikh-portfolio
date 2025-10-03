@@ -675,31 +675,32 @@ input:checked+.slider:before {
 }
 
 .services-card-link {
-  color: var(--font-color);
+  color: var(--primary-color);
   font-weight: 400;
   font-size: 20px;
   transition: 0.5s ease-in-out;
 }
 
-.services-card-link:hover {
-  color: var(--primary-color)D;
-  transition: 0.5s ease-in-out;
-}
-
-.services-card-link-container i {
-  font-size: 25px;
+.services-card:hover .services-card-link {
   color: var(--font-color);
   transition: 0.5s ease-in-out;
 }
 
-.services-card-link-container i:hover {
-  color: var(--primary-color);
+.services-card-link-container i {
+  font-size: 27px;
+  transform: rotate(40deg);
+  color: var(--font-color);
   transition: 0.5s ease-in-out;
 }
 
+
 .services-card:hover .services-card-link-container i {
   color: var(--primary-color);
-  transform: translateX(10px)
+  transition: 0.5s ease-in-out;
+  font-size: 27px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  transform: translate(5px, -5px) rotate(40deg);
 }
 
 .hire-me-card h1 {
@@ -989,7 +990,7 @@ input:checked+.slider:before {
   left: 50%;
   transform: translateX(-50%);
   color: var(--primary-color);
-  font-size: 30px;
+  font-size: 25px;
   cursor: pointer;
   animation: moving-arrow-top 2s forwards infinite linear;
 }
