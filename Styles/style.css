@@ -47,7 +47,9 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  position: sticky;
+  top: 0px;
+  z-index: 100;
 
 }
 
@@ -105,7 +107,6 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .favicon i {
@@ -1372,4 +1373,28 @@ footer{
 }
 .submit-button button i{
   transition: 0.5s ease;
+}
+.about-header-button
+{
+  margin-top: 30px;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  background-color: var(--primary-color);
+  padding:15px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 1;
+  display: none;
+}
+.about-header-button .btn{
+  background-color: transparent;
+  border: none;
+  font-size:20px;
 }

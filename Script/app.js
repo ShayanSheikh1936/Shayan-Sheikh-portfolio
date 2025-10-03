@@ -1,16 +1,3 @@
-const navbar1 = document.querySelector(".navbar")
-window.addEventListener("scroll", ()=>
-{
-    if (window.scrollY > 200) {
-        navbar1.style.backgroundColor= "green";
-        navbar1.style.transition= "2s ease";
-    }
-    else
-    {
-        navbar1.style.backgroundColor= "#2b2b2b";
-    }
-   
-})
 const chatBtn = document.querySelector(".chat-btn")
 const sidebar = document.querySelector(".sidebar")
 const sidebarCloseIcon = document.querySelector(".sidebar-close-icon")

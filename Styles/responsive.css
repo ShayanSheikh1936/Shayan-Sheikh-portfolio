@@ -61,7 +61,7 @@
     {
         padding: 20px 5px 20px 5px;
     }
-    .working-process-card ul {
+    .working-process-card ul {  
         width: 350px;
     }
     .contact-section
@@ -75,6 +75,15 @@
     }
     .chat-btn{
         display: none;
+    }
+    .contact-section-1 h1
+    {
+        font-size: 40px;
+    }
+    .whatsapp-redirect img
+    {
+        width: 50px;
+        height: 50px;
     }
     .main-header-image img
     {
@@ -173,4 +182,188 @@
     margin-right: 3px;
     padding: 10px;
   }
+}
+
+@media screen and (max-width: 320px)
+{
+    .name{
+        font-size: 14px;
+    }
+    .role
+    {
+        font-size: 12px;
+    }
+    .navbar-toggle-icon{
+        width: 52px;
+        height: 52px;
+        display: block;
+    }
+    .navbar-toggle-icon i {
+        font-size: 25px;
+    }
+    .chat-btn{
+        display: none;
+    }
+    .main-header-image img
+    {
+        display: none;
+    }
+    .main-header-image{
+        display: none;
+    }
+    .main-header{
+        grid-template-columns: 2fr;
+    }
+    .services-card-content
+    {
+        padding: 0px;
+    }
+    .services-cards-row
+    {
+        gap: 30px;
+    }
+    .services-card
+    {
+        margin: 20px;
+        padding: 30px 10px 30px 10px;
+    }
+    .favicon
+    {
+        width: 45px;
+        height: 45px;
+    }
+    .favicon i 
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+    }
+    .main-header-content .redirect-freelance
+    {
+        font-size: 25px;
+    }
+    .redirect-freelance img
+    {
+        width: 150px;
+        height: 150px;
+        top: -55px;
+        left: -70px;
+    }
+    .main-header-title
+    {
+        font-size: 45px;
+    }
+    .main-header-title img
+    {
+        width: 40px;
+        height: 40px;
+    }
+    .main-header-title span
+    {
+        font-size: 34px;
+    }
+    .outer-circle
+    {
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+    }
+    .inner-circle
+    {
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+    }
+    .services-card
+    {
+        padding: 40px 5px 40px 5px;
+    }
+    .services-card img
+    {
+        width: 70px;
+        height: 70px;
+    }
+    .services-card-title
+    {
+        font-size: 18px;
+    }
+    .services-card-paragraph
+    {
+        font-size: 16px;
+    }
+    .section-heading
+    {
+        font-size:25px ;
+    }
+    .my-specializations
+    {
+        font-size: 30px;
+    }
+    .section-strike{
+        width: 250px;
+    }
+    .section-strike1
+    {
+        width: 320px;
+    }
+    .section-heading1
+    {
+        font-size: 25px;
+    }
+    .hire-me-card
+    {
+        padding: 20px 10px 20px 10px;
+    }
+    .hire-me-card h1{
+        font-size: 50px;
+    }
+    .projects-card img {
+        width: 300px;
+        height: 300px;
+    }
+    .projects-card h3
+    {
+        font-size: 20px;
+    }
+    .projects-card h1
+    {
+        font-size: 30px;
+    }
+    .projects-card .projects-card-popup{
+
+     width: 40px;
+     height: 40px;
+    }
+    .projects-card .projects-card-popup i{
+        font-size: 25px;
+    }
+  .about-buttons
+  {
+    gap: 20px;
+  }
+  .auther-about-image img
+  {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 30px;
+  }
+  .auther-about-image img{
+    margin-right: 0;
+  }
+  .click-about 
+  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .auther-about-content p {
+    font-size: 16px;
+  }
+  .auther-about-card-info
+  {
+    margin-right: 3px;
+    padding: 10px;
+  } 
 }
