@@ -609,16 +609,19 @@
                 </footer>
             </div>
             <div class="contact-section-2">
-                <form action="">
-                    <input  type="text" name="username" id="name" placeholder="Name" >
+                <form name="contact" method="post" data-netlify="true">
+                    <input type="hidden" name="form-name" value="contact" />
+                    <input  type="text" name="username" id="name" placeholder="Name*" required >
                 
                     <div class="combine-email-phone">
-                    <input type="email" name="username" id="username" placeholder="Email*">
+                    <input type="email" name="username" id="username" placeholder="Email*" required>
 
-                    <input type="number" name="username" id="userphone" placeholder="Phone*">
+                    <input type="number" name="username" id="userphone" placeholder="Phone">
                 </div>
-                <textarea name="usertext" id="name" rows="5" placeholder="Message*"></textarea>
-            
+                <textarea name="usertext" id="name" rows="3" placeholder="Message*" required></textarea>
+                <div class="submit-button">
+            <button type="submit"> <i class="fa-solid fa-paper-plane"></i>Submit</button>
+        </div>
                 </form>
             </div>
         </div>
