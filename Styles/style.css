@@ -14,10 +14,22 @@
   --font-color: white;
   --font-icon-color: black;
   --border-color: white;
+  --header-gradient: #c8f31d44;
+  --text-gradient:  #fff000;
+}
+.dark-mode
+{
+  --primary-color: #C9F31D;
+  --secondary-color: white;
+  --font-color: #2b2b2b;
+  --font-icon-color: black;
+  --border-color: #2b2b2b;
+  --header-gradient: #2b2b2b48;
+  --text-gradient:  #fff000;
 }
 
 body {
-  background: #2b2b2b;
+  background: var(--secondary-color);
 }
 
 a {
@@ -36,7 +48,7 @@ a {
 
 .navbar {
   width: 100%;
-  background-color: #2b2b2b;
+  background-color: var(--secondary-color);
   /* border: 1px solid var(--border-color);
   border-left: 1px;
   border-top: 1px;
@@ -72,7 +84,17 @@ a {
   font-weight: bold;
   color: var(--font-color);
 }
-
+.name {
+  color: var(--font-color);
+  font-weight: bold;
+}
+.role{
+  color: var(--font-color);
+}
+.query
+{
+  color: var(--font-color);
+}
 .role {
   font-size: 15px;
   color: var(--font-color);
@@ -162,7 +184,7 @@ a {
 /* The slider */
 .slider {
   border: 2px solid var(--border-color);
-  --background: linear-gradient(#2b2b2b);
+  --background: linear-gradient(var(--primary-color));
   position: absolute;
   cursor: pointer;
   top: 0;
@@ -356,7 +378,7 @@ input:checked+.slider:before {
   float: left;
   display: grid;
   grid-template-columns: 1.5fr 1fr;
-  background: linear-gradient(#2b2b2b, #c8f31d44);
+  background: linear-gradient(var(--secondary-color), var(--header-gradient));
   margin-bottom: 20px;
 }
 
@@ -466,7 +488,7 @@ input:checked+.slider:before {
   transition: all 0.5s;
   color: transparent;
   position: relative;
-  background: linear-gradient(to right, var(--primary-color), #fff000);
+  background: linear-gradient(to right, var(--primary-color), var(--text-gradient));
   background-clip: text;
   -webkit-background-clip: text;
 }
@@ -816,7 +838,6 @@ input:checked+.slider:before {
 .projects-card-popup i {
   font-size: 25px;
   transform: rotate(45deg);
-
   color: var(--font-icon-color);
 }
 
@@ -826,7 +847,7 @@ input:checked+.slider:before {
 }
 
 .projects-card:hover .projects-card-popup i {
-  color: var(--font-icon-color);
+  color: var(--primary-color);
   transition: 0.5s ease-in-out;
 }
 
@@ -964,23 +985,24 @@ input:checked+.slider:before {
   gap: 15px;
   
   border-radius: 10px;
-  background: var(--primary-color);
+  background: var(--secondary-color);
+  border: 2px solid var(--primary-color);
 }
 
 .auther-about-card-info label {
   font-size: 19px;
-  color: var(--secondary-color);
+  color: var(--font-color);
   font-weight: 500;
 }
 
 .auther-about-card-info a {
   font-size: 17px;
-  color: var(--secondary-color);
+  color: var(--font-color);
 }
 
 .social-icons i {
   font-size: 28px;
-  color: var(--secondary-color);
+  color: var(--font-color);
 }
 
 

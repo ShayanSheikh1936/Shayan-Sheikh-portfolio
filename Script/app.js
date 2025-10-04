@@ -122,4 +122,9 @@ const year = new Date();
 let fullYear = year.getFullYear();
 currentYear.innerText = fullYear;
 
-   
+const toggle= document.getElementById("toggle");
+
+toggle.addEventListener("change", ()=>
+{
+    document.documentElement.classList.toggle("dark-mode", toggle.checked);
+})
