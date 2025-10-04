@@ -19,13 +19,13 @@ window.addEventListener("scroll", ()=>
     {
         if (window.scrollY > 800) {
             mobileBottomNavbar.style.display = "flex";
-            navbar.style.transition= "1s ease"
+            mobileBottomNavbar.style.transition= "1s ease"
+            mobileBottomNavbar.style.opacity = "1"
+            mobileBottomNavbar.style.visibility = "visible"
         }
         else
         {
             mobileBottomNavbar.style.display ="none"
-            
-
         }
     })
 

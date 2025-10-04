@@ -90,8 +90,8 @@
     .mobile-bottom-navbar
     {
         display: flex;
-        opacity: 1;
-        visibility: visible;
+        opacity: 0;
+        visibility: hidden;
     }
     .navbar
     {
@@ -253,10 +253,9 @@
     }
    .mobile-bottom-navbar
     {
-        display: fl;
         display: flex;
-        opacity: 1;
-        visibility: visible
+        opacity: 0;
+        visibility: hidden;
     }
     .navbar-bottom-container ul
     {

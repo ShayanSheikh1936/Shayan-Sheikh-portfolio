@@ -1417,8 +1417,6 @@ footer{
   border-bottom-right-radius:0px ;
   border-bottom-left-radius:0px ;
  display: none;
- visibility: hidden;
- opacity: 0;
 }
 .navbar-bottom-container ul{
   display: flex;
