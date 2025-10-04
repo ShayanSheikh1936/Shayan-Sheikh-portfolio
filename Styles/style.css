@@ -1420,7 +1420,7 @@ footer{
 }
 .navbar-bottom-container ul{
   display: flex;
-  gap: 20px;
+  gap: 18px;
   text-decoration: none;
   list-style: none;
   color: var(--font-color);
@@ -1432,7 +1432,6 @@ footer{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 5px;
 }
 .navbar-bottom-container li i
 {
