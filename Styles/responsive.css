@@ -206,6 +206,10 @@
     margin-right: 3px;
     padding: 10px;
   }
+  .navbar-bottom-container ul
+  {
+      gap: 14px;
+  }
 }
 
 @media screen and (max-width: 320px)
