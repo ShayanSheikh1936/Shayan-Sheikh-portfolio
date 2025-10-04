@@ -1435,10 +1435,10 @@ footer{
 }
 .navbar-bottom-container li i
 {
-  font-size:18px ;
+  font-size:17px ;
   color: var(--primary-color);
 }
 .navbar-bottom-container li a{
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 200;
 }
