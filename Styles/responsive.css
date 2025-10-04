@@ -1,12 +1,20 @@
+@media screen and (min-width: 768px) {
+    .mobile-bottom-navbar
+    {
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+    }
+}
 @media screen and (max-width: 768px) {
     .nav-menu li{
         display: none;
     }
     .navbar-toggle-icon{
-        display: block;
+        display: none;
     }
     .navbar .hide{
-        display: none;
+        display: block;
     }
     .chat-btn{
         display: block;
@@ -68,10 +76,26 @@
     {
         gap: 50px;
     }
+    .mobile-bottom-navbar
+    {
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+    }
     }
 @media screen and (max-width: 425px) {
     .navbar-toggle-icon{
-        display: block;
+        display: none;
+    }
+    .mobile-bottom-navbar
+    {
+        display: flex;
+        opacity: 1;
+        visibility: visible;
+    }
+    .navbar
+    {
+        position: relative;
     }
     .chat-btn{
         display: none;
@@ -196,7 +220,7 @@
     .navbar-toggle-icon{
         width: 52px;
         height: 52px;
-        display: block;
+        display: none;
     }
     .navbar-toggle-icon i {
         font-size: 25px;
@@ -226,6 +250,17 @@
     {
         margin: 20px;
         padding: 30px 10px 30px 10px;
+    }
+   .mobile-bottom-navbar
+    {
+        display: fl;
+        display: flex;
+        opacity: 1;
+        visibility: visible
+    }
+    .navbar-bottom-container ul
+    {
+        gap: 10px;
     }
     .favicon
     {
@@ -366,4 +401,8 @@
     margin-right: 3px;
     padding: 10px;
   } 
+  .navbar-bottom-container li a
+  {
+    font-size: 14px;
+  }
 }

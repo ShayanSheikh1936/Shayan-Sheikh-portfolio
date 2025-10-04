@@ -1,3 +1,34 @@
+const navbar = document.querySelector(".navbar")
+window.addEventListener("scroll", ()=>
+{
+    if (window.scrollY > 200) {
+        navbar.style.border ="1px solid var(--border-color)"
+        navbar.style.borderLeft= "1px";
+        navbar.style.borderTop= "1px";
+        navbar.style.borderRight= "1px";
+        navbar.style.transition= "1s ease"
+    }
+    else
+    {
+         navbar.style.border ="none"
+    }
+})
+
+const mobileBottomNavbar = document.querySelector(".mobile-bottom-navbar")
+window.addEventListener("scroll", ()=>
+    {
+        if (window.scrollY > 800) {
+            mobileBottomNavbar.style.display = "flex";
+            navbar.style.transition= "1s ease"
+        }
+        else
+        {
+            mobileBottomNavbar.style.display ="none"
+            
+
+        }
+    })
+
 const chatBtn = document.querySelector(".chat-btn")
 const sidebar = document.querySelector(".sidebar")
 const sidebarCloseIcon = document.querySelector(".sidebar-close-icon")
