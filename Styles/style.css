@@ -1439,6 +1439,6 @@ footer{
   color: var(--primary-color);
 }
 .navbar-bottom-container li a{
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 200;
 }
