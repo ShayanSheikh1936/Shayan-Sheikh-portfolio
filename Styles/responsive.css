@@ -89,9 +89,9 @@
     }
     .mobile-bottom-navbar
     {
-        display: flex;
-        opacity: 0;
-        visibility: hidden;
+        display: none;
+        opacity: 1;
+        visibility: visible;
     }
     .navbar
     {
@@ -257,9 +257,9 @@
     }
    .mobile-bottom-navbar
     {
-        display: flex;
-        opacity: 0;
-        visibility: hidden;
+        display: none;
+        opacity: 1;
+        visibility: visible;
     }
     .navbar-bottom-container ul
     {

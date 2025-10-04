@@ -19,9 +19,7 @@ window.addEventListener("scroll", ()=>
     {
         if (window.scrollY > 800) {
             mobileBottomNavbar.style.display = "flex";
-            mobileBottomNavbar.style.transition= "1s ease"
-            mobileBottomNavbar.style.opacity = "1"
-            mobileBottomNavbar.style.visibility = "visible"
+            mobileBottomNavbar.style.transition= "1s ease" 
         }
         else
         {
@@ -122,7 +120,6 @@ const currentYear = document.getElementById("current-year")
 
 const year = new Date();
 let fullYear = year.getFullYear();
-console.log(year);
 currentYear.innerText = fullYear;
 
    
