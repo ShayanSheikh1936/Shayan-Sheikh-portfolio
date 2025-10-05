@@ -960,6 +960,18 @@ input:checked+.slider:before {
 
 .auther-about-image img {
   margin-right: 30px;
+  border-radius: 50%;
+  border: 1px solid var(--primary-color);
+  animation: box-shadow 3s infinite;
+}
+@keyframes box-shadow {
+  0%,100% { box-shadow: 0px 0px 50px 1px var(--primary-color); } 
+  14% { box-shadow: 0px 0px 20px 1px var(--primary-color); } 
+  28% { box-shadow: 0px 0px 50px 1px var(--primary-color); } 
+  42% { box-shadow: 0px 0px 25px 1px var(--primary-color); } 
+  56% { box-shadow: 0px 0px 45px 1px var(--primary-color); } 
+  70% { box-shadow: 0px 0px 49px 1px var(--primary-color); } 
+  84% { box-shadow: 0px 0px 50px 1px var(--primary-color); } 
 }
 
 .auther-about-content {
