@@ -563,6 +563,11 @@ input:checked+.slider:before {
 .playnow {
   font-size: 20px;
   color: var(--font-color);
+  display: flex;
+  justify-content: center;
+  
+  flex-direction: column;
+  text-align: center;
 }
 
 .section-heading {
