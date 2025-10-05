@@ -126,5 +126,6 @@ const toggle= document.getElementById("toggle");
 
 toggle.addEventListener("change", ()=>
 {
-    document.documentElement.classList.toggle("dark-mode", toggle.checked);
+    document.documentElement.classList.toggle("dark-mode");
+
 })

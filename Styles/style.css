@@ -17,6 +17,7 @@
   --header-gradient: #c8f31d44;
   --text-gradient:  #fff000;
   --backgound-picture: url(../Pictures/map-light.png);
+  --call-image: url(../Pictures/call.png);
 }
 .dark-mode
 {
@@ -28,6 +29,7 @@
   --header-gradient: #2b2b2b48;
   --text-gradient:  #fff000;
   --backgound-picture: url(../Pictures/map.png);
+  --call-image: url(../Pictures/call-dark.png);
 }
 
 body {
@@ -186,7 +188,7 @@ a {
 /* The slider */
 .slider {
   border: 2px solid var(--border-color);
-  --background: linear-gradient(var(--primary-color));
+  --background: linear-gradient(var(--primary-color),);
   position: absolute;
   cursor: pointer;
   top: 0;
@@ -1296,10 +1298,14 @@ input:checked+.slider:before {
   display: flex;
   align-items: center;
 }
-.whatsapp-redirect img{
+.whatsapp-redirect .call-image{
   width: 60px;
   height: 60px;
+  background-image: var(--call-image);
+  background-position: center;
+  background-size: cover;
 }
+
 .whatsapp-redirect a{
   font-size: 18px;
   font-weight: 500;
@@ -1377,7 +1383,7 @@ footer{
   border-radius: 10px;
   font-size: 16px;
   background-color: var(--primary-color);
-  color: var(--secondary-color);
+  color: var(--font-icon-color);
   border: 2px solid var(--primary-color);
   transition: 0.5s ease;
 }
