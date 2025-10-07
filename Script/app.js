@@ -109,10 +109,10 @@ sidebarCloseIcon.addEventListener("click", ()=>
             mySkillsSection.style.display = "inline-flex";
             myEducationSection.style.display ="none"
            }
-           else if(btn.classList.contains("hobbies-btn"))
-           {
-            console.log("hobbies");
-           }
+        //    else if(btn.classList.contains("hobbies-btn"))
+        //    {
+        //     console.log("hobbies");
+        //    }
            
         })
     })
