@@ -84,6 +84,7 @@ sidebarCloseIcon.addEventListener("click", ()=>
     const myEducationSection = document.querySelector(".my-education-section")
     const mySkillsSection = document.querySelector(".my-skills-section")
     const myAboutSection =document.querySelector(".my-about-section")
+    const myCertificates = document.querySelector(".certificates-container")
     const allBtns = document.querySelectorAll(".btn");
     
     allBtns.forEach((btn)=>
@@ -96,24 +97,29 @@ sidebarCloseIcon.addEventListener("click", ()=>
             myAboutSection.style.display = "inline-flex";
             mySkillsSection.style.display = "none";
             myEducationSection.style.display ="none"
+            myCertificates.style.display = "none"
            }
            else if(btn.classList.contains("education-btn"))
            {
             myAboutSection.style.display = "none";
             mySkillsSection.style.display = "none";
             myEducationSection.style.display ="inline-flex"
+            myCertificates.style.display = "none"
            }
            else if(btn.classList.contains("skills-btn"))
            {
             myAboutSection.style.display = "none";
             mySkillsSection.style.display = "inline-flex";
             myEducationSection.style.display ="none"
+            myCertificates.style.display = "none"
            }
-        //    else if(btn.classList.contains("hobbies-btn"))
-        //    {
-        //     console.log("hobbies");
-        //    }
-           
+           else if(btn.classList.contains("certificates-btn"))
+           {
+            myAboutSection.style.display = "none";
+            mySkillsSection.style.display = "none";
+            myEducationSection.style.display ="none"
+            myCertificates.style.display = "block"
+           } 
         })
     })
 const currentYear = document.getElementById("current-year")
