@@ -135,3 +135,18 @@ toggle.addEventListener("change", ()=>
     document.documentElement.classList.toggle("dark-mode");
 
 })
+
+// -------------------------------------------------------------
+// video button
+let videoButton = document.querySelector(".video-play-button");
+let modal= document.querySelector(".modal-overlay");
+let closeBtn = document.querySelector(".close-btn")
+videoButton.addEventListener("click", ()=>
+{
+    modal.classList.add("open-model");
+    
+});
+closeBtn.addEventListener("click",()=>
+{   
+    modal.classList.remove("open-model");
+})

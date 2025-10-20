@@ -82,6 +82,14 @@
         opacity: 0;
         visibility: hidden;
     }
+    .modal-container{
+        width: 500px;
+        height: 400px;
+    }
+    .modal-container video{
+        width: 450px;
+        
+    }
     }
 @media screen and (max-width: 425px) {
     .navbar-toggle-icon{
@@ -210,6 +218,14 @@
   {
       gap: 14px;
   }
+  .modal-container{
+    width: 400px;
+    height: 300px;
+}
+.modal-container video{
+    width: 350px;
+    
+}
 }
 
 @media screen and (max-width: 320px)
@@ -408,4 +424,23 @@
   {
     font-size: 14px;
   }
+  .modal-container{
+    width: 330px;
+    height: 100px;
+}
+.modal-container video{
+    width: 230px;
+    
+}
+}
+@media screen and (max-width: 375px)
+{
+    .modal-container{
+        width: 350px;
+        height: 200px;
+    }
+    .modal-container video{
+        width: 250px;
+        
+    }
 }
