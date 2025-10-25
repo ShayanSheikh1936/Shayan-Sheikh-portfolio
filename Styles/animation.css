@@ -76,3 +76,17 @@
   }
   
 }
+@keyframes scrollOnatop {
+  0%{
+    transform: opacity(0);
+  }
+  20%{
+    transform: opacity(1px);
+  }
+  50%{
+    transform: opacity(1px);
+  }
+  100%{
+    transform: opacity(1px);
+  }
+}

@@ -27,6 +27,7 @@ window.addEventListener("scroll", ()=>
         }
     })
 
+    
 const chatBtn = document.querySelector(".chat-btn")
 const sidebar = document.querySelector(".sidebar")
 const sidebarCloseIcon = document.querySelector(".sidebar-close-icon")
@@ -34,7 +35,6 @@ const sidebarCloseIcon = document.querySelector(".sidebar-close-icon")
 chatBtn.addEventListener("click", ()=>
 {
     sidebar.classList.add("show-sidebar");
-    console.log("clicked");
     sidebar.classList.remove("close-sidebar");
     
 })
@@ -144,9 +144,31 @@ let closeBtn = document.querySelector(".close-btn")
 videoButton.addEventListener("click", ()=>
 {
     modal.classList.add("open-model");
+    document.body.style.position = "fixed";
     
 });
 closeBtn.addEventListener("click",()=>
 {   
+    document.body.style.position= "relative";
     modal.classList.remove("open-model");
 })
+// -------------------------------------------------------------------
+ScrollReveal({
+ 
+    distance : '10px',
+    duration : 1500,
+    delay : 300,
+  });
+  ScrollReveal().reveal('.animate-right', {delay : 250, origin: 'right', distance: '20px', reset: true, mobile: false, easing: 'ease'});
+  ScrollReveal().reveal('.animate-left', { delay: 250 , origin: 'left', distance: '20px', reset: true});
+  ScrollReveal().reveal('.animate-bottom',{ delay: 200 , origin: 'bottom' , reset: true, distance: '30px'});
+  ScrollReveal().reveal('.animate-top',{ delay: 300 , origin: 'top', distance: '30px', reset: true});
+//   ScrollReveal().reveal('.animate-top-1',{ delay: 200 , origin: 'bottom'});
+//   ScrollReveal().reveal('.animate-top-2',{ delay: 300 , origin: 'bottom'});
+//   ScrollReveal().reveal('.animate-top-3',{ delay: 400 , origin: 'bottom'});
+//   ScrollReveal().reveal('.animate-top-4',{ delay: 500 , origin: 'bottom'});
+  ScrollReveal().reveal('.reveal1',{ delay: 300 , reset:true,});
+  ScrollReveal().reveal('.reveal2',{ delay: 500 , reset:true, });
+  ScrollReveal().reveal('.reveal3',{ delay: 700 , reset:true,});
+  ScrollReveal().reveal('.reveal4',{ delay: 900 , reset:true,});
+  ScrollReveal().reveal('.clickmore',{ delay: 700 , reset:true, origin: 'bottom' });

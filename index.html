@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body>
@@ -104,7 +105,7 @@
         </div>
     </aside>
     <header class="main-header" id="home">
-        <div class="main-header-content">
+        <div class="main-header-content animate-left">
             <div class="redirect-freelance"><a href="https://www.upwork.com/freelancers/~019ed97afd63644af8" target="_blank">Currently available <p>for freelance</p>
                     worldwide </a><i class="fa-solid fa-arrow-up"></i>
                 <div class="straight-lines"></div>
@@ -136,8 +137,8 @@
             </span>
         </div>
         </div>
-        <div class="main-header-image">
-            <img src="./Pictures/developer picture.png" alt="" width="500px" height="500px">
+        <div class="main-header-image ">
+            <img class="animate-right" src="./Pictures/developer picture.png" alt="" width="500px" height="500px">
         </div>  
     </header>
     <div class="modal-overlay">
@@ -160,11 +161,11 @@
     </section>
     <!-- about section -->
     <section class="about-container" id="about">
-        <div class="section-heading-container">
+        <div class="animate-bottom section-heading-container">
             <p class="section-heading">About Me</p>
             <p class="section-strike"></p>
         </div>
-        <div class="about-content" style="margin-top: 30px;">
+        <div class="about-content animate-bottom" style="margin-top: 30px;">
             <div class="about-star">
                 <img src="./Pictures/section-star.png" alt="">
             </div>
@@ -179,10 +180,10 @@
             <button class="btn certificates-btn">Certificates</button>
         </div>
         <div class="click-about my-about-section">
-        <div class="auther-about-image">
+        <div class="auther-about-image animate-left">
             <img src="./Pictures/designer picture.jfif" alt="" height="400px" width="400px">
         </div>
-        <div class="auther-about">
+        <div class="auther-about animate-right">
         <div class="auther-about-content">
             <div class="auther-about-content-heading">
                     <i class="fa-regular fa-user"></i>
@@ -430,14 +431,14 @@
     </section>
     <!-- Services section -->
     <section class="about-container" id="services">
-        <div class="section-heading-container">
-            <p class="section-heading">What I Do</p>
+        <div class="section-heading-container animate-top">
+            <p class="section-heading ">What I Do</p>
             <p class="section-strike"></p>
         </div>
-        <h1 class="my-specializations">My Specializations</h1>
+        <h1 class="my-specializations animate-bottom">My Specializations</h1>
         <div class="services-cards-row">
 
-            <div class="services-card">
+            <div class="services-card reveal1">
                 <div class="services-card-image">
                     <img src="./Pictures/1.png" alt="" width="80px" height="80px">
                 </div>
@@ -452,8 +453,8 @@
                 </div>
             </div>
 
-            <div class="services-card">
-                <div class="services-card-image">
+            <div class="services-card reveal2">
+                <div class="services-card-image ">
                     <img src="./Pictures/app-development.png" alt="" width="80px" height="80px">
                 </div>
                 <div class="services-card-content">
@@ -467,7 +468,7 @@
                 </div>
             </div>
 
-            <div class="services-card">
+            <div class="services-card reveal3">
                 <div class="services-card-image">
                     <img src="./Pictures/2.png" alt="" width="80px" height="80px">
                 </div>
@@ -483,7 +484,7 @@
             </div>
 
 
-            <div class="hire-me-card">
+            <div class="hire-me-card animate-right">
                 <span>
                     <h1>Hire Me</h1> <i class="fa-solid fa-arrow-up"></i>
                 </span>
@@ -504,15 +505,15 @@
     </section>
     <!-- projects section -->
     <section class="projects-container" id="projects">
-        <div class="section-heading-container">
+        <div class="section-heading-container  animate-top">
             <p class="section-heading1">Complete Project</p>
             <p class="section-strike1"></p>
         </div>
-        <h1 style="margin: 0;" class="my-specializations section-heading2">Look At My Portfolio And Give Me</h1>
-        <h1 class="my-specializations section-heading2">our Feedback</h1>
+        <h1 style="margin: 0;" class="my-specializations section-heading2 animate-bottom">Look At My Portfolio And Give Me</h1>
+        <h1 class="my-specializations section-heading2 animate-bottom">our Feedback</h1>
 
-        <div class="projects-cards-row">
-            <div class="projects-card">
+        <div  class="projects-cards-row">
+            <a href="" class="projects-card reveal1">
                 <img src="./Pictures/grill chemmy.PNG" alt="" width="630px" height="440px">
                 <div class="projects-card-content">
                     <div style="display: flex; flex-direction: column;">
@@ -523,8 +524,8 @@
                         <i class="fa-solid fa-arrow-up"></i>
                     </div>
                 </div>
-            </div>
-            <div class="projects-card">
+            </a>
+            <a  href="" class="projects-card reveal2">
                 <img src="./Pictures/royal wedding.PNG" alt="" width="630px" height="599px">
                 <div class="projects-card-content">
                     <div style="display: flex; flex-direction: column;">
@@ -535,9 +536,9 @@
                         <i class="fa-solid fa-arrow-up"></i>
                     </div>
                 </div>
-            </div>
+            </a>
 
-            <div class="projects-card">
+            <a href="" class="projects-card reveal3">
                 <img src="./Pictures/watch zone.PNG" alt="" width="630px" height="440px" >
                 <div class="projects-card-content">
                     <div style="display: flex; flex-direction: column;">
@@ -548,9 +549,9 @@
                         <i class="fa-solid fa-arrow-up"></i>
                     </div>
                 </div>
-            </div>
+            </a>
 
-            <div class="projects-card">
+            <a href="#" class="projects-card reveal4">
                 <img src="./Pictures/delight receipe.PNG" alt="" width="630px" height="599px">
                 <div class="projects-card-content">
                     <div style="display: flex; flex-direction: column;">
@@ -561,10 +562,10 @@
                         <i class="fa-solid fa-arrow-up"></i>
                     </div>
                 </div>
-            </div>
+            </a>
         </div>
     </section>
-    <div class="round-click-more-work-container">
+    <div class="round-click-more-work-container animate-top">
         <div class="round-click-more-work">
             <div class="outer-round">
             </div>
@@ -573,14 +574,14 @@
         </div>
     </div>
     <section>
-        <div class="section-heading-container">
+        <div class="section-heading-container animate-top">
             <p class="section-heading1">Working Process</p>
             <p class="section-strike1"></p>
         </div>
-        <h1 style="margin: 0;" class="my-specializations section-heading2">Your Dream Website In Just</h1>
-        <h1 class="my-specializations section-heading2">Few Steps</h1>
+        <h1 style="margin: 0;" class="my-specializations section-heading2 animate-bottom">Your Dream Website In Just</h1>
+        <h1 class="my-specializations section-heading2 animate-bottom">Few Steps</h1>
         <div class="working-process-container">
-            <div class="working-process-card">
+            <div class="working-process-card reveal1">
                 <div class="working-process-card-circle"></div>
                 <h1>Share Your Vision</h1>
                 <p>Tell us your website goals and style, we create a clear roadmap to build your dream</p>
@@ -591,7 +592,7 @@
                 </ul>
             </div>
 
-            <div class="working-process-card">
+            <div class="working-process-card reveal2">
                 <div class="working-process-card-circle"></div>
                 <h1>Design & Develop</h1>
                 <p>Turns your vision into a stunning, user-friendly, and fully responsive website that works on all devices.</p>
@@ -603,7 +604,7 @@
             </div>
         
 
-            <div class="working-process-card">
+            <div class="working-process-card reveal3">
                 <div class="working-process-card-circle"></div>
                 <h1>Webflow & Grow</h1>
                 <p>Once your site is ready, we launch it live and provide support so your business keeps growing online.</p>
@@ -619,7 +620,7 @@
     <!-- contact-section -->
     <section class="contact-container" id="contact">
         <div class="contact-section">
-            <div class="contact-section-1">
+            <div class="contact-section-1 animate-left">
                 <h1>let's Contact</h1>
                 <div class="whatsapp-redirect">
                     <div class="call-image" > </div>
@@ -637,17 +638,17 @@
                     <p>&copy; <span id="current-year"></span> Shayan Sheikh. All Right Reserved</p>
                 </footer>
             </div>
-            <div class="contact-section-2">
+            <div class="contact-section-2 animate-right">
                 <form name="contact" method="post" data-netlify="true">
                     <input type="hidden" name="form-name" value="contact" />
-                    <input  type="text" name="name" id="name" placeholder="Name*" required >
+                    <input  type="text" name="name" id="name" placeholder="Name*" required pattern="[A-B]-{2}" >
                 
                     <div class="combine-email-phone">
                     <input type="email" name="email" id="username" placeholder="Email*" required>
 
                     <input type="number" name="phone" id="userphone" placeholder="Phone">
                 </div>
-                <textarea name="message" id="name" rows="3" placeholder="Message*" required></textarea>
+                <textarea name="message" id="message" rows="3" placeholder="Message*" required></textarea>
                 <div class="submit-button">
             <button type="submit"> <i class="fa-solid fa-paper-plane"></i>Submit</button>
         </div>
@@ -681,5 +682,9 @@
             </ul>
         </div>
     </section>
+    <!-- scroll on top button -->
+    <a href="#" class="scrollOnTop">
+        <i class="fa-solid fa-angle-up"></i>
+    </a>
 </body>
 </html>
