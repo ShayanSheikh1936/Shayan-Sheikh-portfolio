@@ -768,19 +768,20 @@ input:checked+.slider:before {
   transition: 0.5s ease-in-out;
 }
 
-.hire-me-card:hover span i {
+.hire-me-card:hover a i {
   color: black;
   transition: 0.5s ease-in-out;
+  transform:translate(5px, -5px) rotate(45deg);
 }
 
-.hire-me-card span {
+.hire-me-card a {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
 }
 
-.hire-me-card span i {
+.hire-me-card a i {
   font-size: 40px;
   transform: rotate(45deg);
   color: var(--font-color);

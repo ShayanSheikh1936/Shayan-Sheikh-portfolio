@@ -160,7 +160,7 @@ ScrollReveal({
     delay : 300,
   });
   ScrollReveal().reveal('.animate-right', {delay : 250, origin: 'right', distance: '20px', reset: true, mobile: false, easing: 'ease'});
-  ScrollReveal().reveal('.animate-left', { delay: 250 , origin: 'left', distance: '20px', reset: true});
+  ScrollReveal().reveal('.animate-left', { delay: 250 , origin: 'left', distance: '20px', reset: true, mobile: false});
   ScrollReveal().reveal('.animate-bottom',{ delay: 200 , origin: 'bottom' , reset: true, distance: '30px'});
   ScrollReveal().reveal('.animate-top',{ delay: 300 , origin: 'top', distance: '30px', reset: true});
 //   ScrollReveal().reveal('.animate-top-1',{ delay: 200 , origin: 'bottom'});
@@ -172,3 +172,6 @@ ScrollReveal({
   ScrollReveal().reveal('.reveal3',{ delay: 700 , reset:true,});
   ScrollReveal().reveal('.reveal4',{ delay: 900 , reset:true,});
   ScrollReveal().reveal('.clickmore',{ delay: 700 , reset:true, origin: 'bottom' });
+  ScrollReveal().reveal('.rotate',{ rotate:{ x: 0, y: 0, z: 100 }, reset: true } );
+  ScrollReveal().reveal('.footerSection',{ delay: 200 , origin: 'bottom' , reset: true, distance: '30px', desktop: false });
+  ScrollReveal().reveal('.contactSection',{ delay: 200 , origin: 'top' , reset: true, distance: '30px', desktop: false } );
