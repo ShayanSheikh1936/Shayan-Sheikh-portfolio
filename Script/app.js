@@ -50,18 +50,14 @@ sidebarCloseIcon.addEventListener("click", ()=>
         function toggleText() {
             if (isDeveloper) {
                 changingText.textContent = 'Designer';
-                changingText.classList.remove('developer');
-                changingText.classList.add('designer');
+               
             } else {
                 changingText.textContent = 'Developer';
-                changingText.classList.remove('designer');
-                changingText.classList.add('developer');
+              
             }
             
             // Toggle active class for animation
-            changingText.classList.remove('active');
-            void changingText.offsetWidth; // Trigger reflow
-            changingText.classList.add('active');
+           
             
             isDeveloper = !isDeveloper;
         }
