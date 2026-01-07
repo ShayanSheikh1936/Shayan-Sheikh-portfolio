@@ -171,3 +171,7 @@ ScrollReveal({
   ScrollReveal().reveal('.rotate',{ rotate:{ x: 0, y: 0, z: 100 }, reset: true } );
   ScrollReveal().reveal('.footerSection',{ delay: 200 , origin: 'bottom' , reset: true, distance: '30px', desktop: false });
   ScrollReveal().reveal('.contactSection',{ delay: 200 , origin: 'top' , reset: true, distance: '30px', desktop: false } );
+
+  document.addEventListener("domContentLoaded",()=>{
+    document.body.classList.remove("close-sidebar")
+  })
