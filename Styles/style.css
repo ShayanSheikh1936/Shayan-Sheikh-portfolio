@@ -1575,3 +1575,52 @@ footer{
   animation: scrollOnatop 3s inherit ;
   color: var(--secondary-color);
 }
+.loader-screen{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: var(--secondary-color);
+  z-index: 999999;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+.loader-screen h1{
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  /* word-spacing: 5px; */
+  font-weight: bold;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: var(--primary-color);
+  padding-bottom: 25px;
+  /* transition: all 0.5s; */
+  color: transparent;
+  background: linear-gradient(to right, var(--primary-color), var(--text-gradient));
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: size 1s infinite;
+  background-size: 100px 400px;
+  position: relative;
+  z-index: 999;
+}
+.loader-screen::after{
+  content:" ";
+  height: 50px;
+  width: 400px;
+  background: transparent;
+  border-radius: 50px;
+  background: transparent;
+  position: absolute;
+  transform: translateY(-10px);
+  box-shadow: 0 0px 10px 10px blue;
+}
+@keyframes size {
+  form{
+    background-size: 200px 800px;
+
+  }
+  to{
+    background-size: 300px 700px;
+  }
+}
