@@ -92,6 +92,19 @@
     }
     }
 @media screen and (max-width: 425px) {
+    .crousel,
+    .crousel img{
+        width: 300px;
+        height: 300px;
+    }
+    .crousel::scroll-button(left){
+        translate: -10px;
+        font-size: 50px;
+    }
+    .crousel::scroll-button(right){
+        translate: 10px;
+        font-size: 50px;
+    }
     .navbar-toggle-icon{
         display: none;
     }
@@ -227,9 +240,45 @@
     
 }
 }
-
+@media screen and (max-width: 375px)
+{
+    .crousel,
+    .crousel img{
+        width: 250px;
+        height: 250px;
+    }
+    .crousel::scroll-button(left){
+        translate: -10px;
+        font-size: 50px;
+    }
+    .crousel::scroll-button(right){
+        translate: 10px;
+        font-size: 50px;
+    }
+    .modal-container{
+        width: 350px;
+        height: 200px;
+    }
+    .modal-container video{
+        width: 250px;
+        
+    }
+}
 @media screen and (max-width: 320px)
 {
+    .crousel,
+    .crousel img{
+        width: 250px;
+        height: 250px;
+    }
+    .crousel::scroll-button(left){
+        translate: -0px;
+        font-size: 32px;
+    }
+    .crousel::scroll-button(right){
+        translate: 0px;
+        font-size: 32px;
+    }
     .name{
         font-size: 14px;
     }
@@ -432,15 +481,4 @@
     width: 230px;
     
 }
-}
-@media screen and (max-width: 375px)
-{
-    .modal-container{
-        width: 350px;
-        height: 200px;
-    }
-    .modal-container video{
-        width: 250px;
-        
-    }
 }

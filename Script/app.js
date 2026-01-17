@@ -175,3 +175,16 @@ ScrollReveal({
   document.addEventListener("domContentLoaded",()=>{
     document.body.classList.remove("close-sidebar")
   })
+
+document.querySelectorAll(".certificate").forEach((e)=>{
+    e.addEventListener("click", ()=>
+    {
+        console.log("work");
+        
+        // document.querySelector(".allCertificates").className.add("openCertificatecrousel")
+        document.querySelector(".allCertificate").classList.add("openCertificatecrousel")
+    })
+})
+document.querySelector(".crousel-close-btn").addEventListener("click", ()=>{
+    document.querySelector(".allCertificate").classList.remove("openCertificatecrousel")
+})
