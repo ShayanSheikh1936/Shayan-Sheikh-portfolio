@@ -1611,15 +1611,22 @@ footer{
   position-anchor: --crousel;
   position-area: left center;
   translate:-100%;
+  transition: transform 0.3s ease, background 0.3s ease;
+  transform: scale(1);
 }
 .crousel::scroll-button(right){
   content: ">";
   position-area: right center;
   translate:100%;
 }
+.crousel::scroll-button(left):hover,
+.crousel::scroll-button(right):hover{
+  transform: scale(1.2);
+}
 .crousel::scroll-button(left):disabled,
 .crousel::scroll-button(right):disabled
 {
+  cursor: not-allowed;
   opacity: 0.5;
 }
 .crousel img{
