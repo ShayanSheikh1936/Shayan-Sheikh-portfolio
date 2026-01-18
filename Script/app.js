@@ -183,8 +183,10 @@ document.querySelectorAll(".certificate").forEach((e)=>{
         
         // document.querySelector(".allCertificates").className.add("openCertificatecrousel")
         document.querySelector(".allCertificate").classList.add("openCertificatecrousel")
+        document.body.style.overflow = "hidden"
     })
 })
 document.querySelector(".crousel-close-btn").addEventListener("click", ()=>{
     document.querySelector(".allCertificate").classList.remove("openCertificatecrousel")
+    document.body.style.overflow = "scroll"
 })
