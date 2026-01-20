@@ -1649,3 +1649,18 @@ footer{
   cursor: pointer;
   transition: 0.5s ease;
 }
+.redirect-whatsapp{
+  z-index: 100;
+  position: fixed;
+  top: auto;
+  bottom: 60px;
+  right: 10px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+}

@@ -148,6 +148,11 @@ closeBtn.addEventListener("click",()=>
     document.body.style.position= "relative";
     modal.classList.remove("open-model");
 })
+sidebar.addEventListener("domContentLoaded",()=>{
+    // document.body.classList.add("close-sidebar")
+    console.log("shayan"); 
+    document.body.classList.add("close-sidebar");  
+})
 // -------------------------------------------------------------------
 ScrollReveal({
  
@@ -172,9 +177,7 @@ ScrollReveal({
   ScrollReveal().reveal('.footerSection',{ delay: 200 , origin: 'bottom' , reset: true, distance: '30px', desktop: false });
   ScrollReveal().reveal('.contactSection',{ delay: 200 , origin: 'top' , reset: true, distance: '30px', desktop: false } );
 
-  document.addEventListener("domContentLoaded",()=>{
-    document.body.classList.remove("close-sidebar")
-  })
+
 
 document.querySelectorAll(".certificate").forEach((e)=>{
     e.addEventListener("click", ()=>
