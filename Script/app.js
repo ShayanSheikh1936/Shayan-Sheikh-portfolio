@@ -193,3 +193,68 @@ document.querySelector(".crousel-close-btn").addEventListener("click", ()=>{
     document.querySelector(".allCertificate").classList.remove("openCertificatecrousel")
     document.body.style.overflow = "scroll"
 })
+
+gsap.to(".active1", {
+    color: "var(--primary-color)",
+    duration: 0.2,
+    ease: "power3.inOut",
+    scrollTrigger: {
+      trigger: "#home",
+      start: "top center",
+      end: "bottom center",
+      toggleActions: "play reverse play reverse"
+    }
+  });
+  
+
+  gsap.to(".active2", {
+    color: "var(--primary-color)",
+    duration: 0.2,
+    ease: "power3.inOut",
+    scrollTrigger: {
+      trigger: "#about",
+      start: "top center",
+      end: "bottom center",
+      toggleActions: "play reverse play reverse"
+    }
+  });
+  
+
+  gsap.to(".active3", {
+    color: "var(--primary-color)",
+    duration: 0.2,
+    ease: "power3.inOut",
+    scrollTrigger: {
+      trigger: "#services",
+      start: "top center",
+      end: "bottom center",
+      toggleActions: "play reverse play reverse"
+    }
+  });
+  
+
+  gsap.to(".active4", {
+    color: "var(--primary-color)",
+    duration: 0.2,
+    ease: "power3.inOut",
+    scrollTrigger: {
+      trigger: "#projects",
+      start: "top center",
+      end: "bottom center",
+      toggleActions: "play reverse play reverse"
+    }
+  });
+  
+
+  gsap.to(".active5", {
+    color: "var(--primary-color)",
+    duration: 0.2,
+    ease: "power3.inOut",
+    scrollTrigger: {
+      trigger: "#contact",
+      start: "top center",
+      end: "bottom center",
+      toggleActions: "play reverse play reverse"
+    }
+  });
+  
