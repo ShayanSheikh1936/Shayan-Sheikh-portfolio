@@ -128,8 +128,8 @@ const toggle= document.getElementById("toggle");
 
 toggle.addEventListener("change", ()=>
 {
-    document.documentElement.classList.toggle("dark-mode");
-
+    // document.documentElement.classList.toggle("dark-mode");
+    document.body.classList.toggle("dark-mode");
 })
 
 // -------------------------------------------------------------
@@ -194,67 +194,27 @@ document.querySelector(".crousel-close-btn").addEventListener("click", ()=>{
     document.body.style.overflow = "scroll"
 })
 
-// gsap.to(".active1", {
-//     color: "var(--primary-color)",
-//     duration: 0.2,
-//     ease: "power3.inOut",
-//     scrollTrigger: {
-//       trigger: "#home",
-//       start: "top center",
-//       end: "bottom center",
-//       toggleActions: "play reverse play reverse"
-//     }
-//   });
+function navActive(link, section) {
+    gsap.fromTo(
+      link,
+      { color: "var(--font-color)" },
+      {
+        color: "var(--primary-color)",
+        duration: 0.25,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: section,
+          start: "top center",
+          end: "bottom center",
+          toggleActions: "play reverse play reverse",
+          
+        }
+      }
+    );
+  }
   
-
-//   gsap.to(".active2", {
-//     color: "var(--primary-color)",
-//     duration: 0.2,
-//     ease: "power3.inOut",
-//     scrollTrigger: {
-//       trigger: "#about",
-//       start: "top center",
-//       end: "bottom center",
-//       toggleActions: "play reverse play reverse"
-//     }
-//   });
-  
-
-//   gsap.to(".active3", {
-//     color: "var(--primary-color)",
-//     duration: 0.2,
-//     ease: "power3.inOut",
-//     scrollTrigger: {
-//       trigger: "#services",
-//       start: "top center",
-//       end: "bottom center",
-//       toggleActions: "play reverse play reverse"
-//     }
-//   });
-  
-
-//   gsap.to(".active4", {
-//     color: "var(--primary-color)",
-//     duration: 0.2,
-//     ease: "power3.inOut",
-//     scrollTrigger: {
-//       trigger: "#projects",
-//       start: "top center",
-//       end: "bottom center",
-//       toggleActions: "play reverse play reverse"
-//     }
-//   });
-  
-
-//   gsap.to(".active5", {
-//     color: "var(--primary-color)",
-//     duration: 0.2,
-//     ease: "power3.inOut",
-//     scrollTrigger: {
-//       trigger: "#contact",
-//       start: "top center",
-//       end: "bottom center",
-//       toggleActions: "play reverse play reverse"
-//     }
-//   });
-  
+  navActive(".active1", "#home");
+  navActive(".active2", "#about");
+  navActive(".active3", "#services");
+  navActive(".active4", "#projects");
+  navActive(".active5", "#contact");
