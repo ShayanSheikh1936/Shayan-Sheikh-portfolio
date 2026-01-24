@@ -218,3 +218,20 @@ function navActive(link, section) {
   navActive(".active3", "#services");
   navActive(".active4", "#projects");
   navActive(".active5", "#contact");
+
+//   gsap.to(".timeline",{
+//     // transform: "translateY(-780px)",
+//     y: "-780px",
+//     duration: 1,
+//     ease: "power3.out",
+//     scrollTrigger: {
+//         trigger: "#about",
+//         start: "top 30%",
+//         end: "bottom 80%",
+//         // toggleActions: "play reverse play reverse",
+//         scrub: true,
+//         pin: true,
+//         pinSpacing: false,
+//         markers: true,
+//     }
+//   })

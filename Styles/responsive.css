@@ -90,6 +90,14 @@
         width: 450px;
         
     }
+    .contact-section-1 h1
+    {
+        font-size: 50px;
+    }
+    .contact-section-2 form input,
+.contact-section-2 form textarea{
+    font-size: 13px;
+}
     }
 @media screen and (max-width: 425px) {
     .crousel,
