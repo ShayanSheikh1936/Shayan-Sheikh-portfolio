@@ -157,8 +157,7 @@ sidebar.addEventListener("domContentLoaded",()=>{
 ScrollReveal({
  
     distance : '10px',
-    duration : 1500,
-    delay : 300,
+    duration : 1500
   });
   ScrollReveal().reveal('.animate-right', {delay : 250, origin: 'right', distance: '20px', reset: true, mobile: false, easing: 'ease'});
   ScrollReveal().reveal('.animate-left', { delay: 250 , origin: 'left', distance: '20px', reset: true, mobile: false});
@@ -168,12 +167,12 @@ ScrollReveal({
 //   ScrollReveal().reveal('.animate-top-2',{ delay: 300 , origin: 'bottom'});
 //   ScrollReveal().reveal('.animate-top-3',{ delay: 400 , origin: 'bottom'});
 //   ScrollReveal().reveal('.animate-top-4',{ delay: 500 , origin: 'bottom'});
-  ScrollReveal().reveal('.reveal1',{ delay: 300 , reset:true,});
-  ScrollReveal().reveal('.reveal2',{ delay: 500 , reset:true, });
-  ScrollReveal().reveal('.reveal3',{ delay: 700 , reset:true,});
-  ScrollReveal().reveal('.reveal4',{ delay: 900 , reset:true,});
-  ScrollReveal().reveal('.clickmore',{ delay: 700 , reset:true, origin: 'bottom' });
-  ScrollReveal().reveal('.rotate',{ rotate:{ x: 0, y: 0, z: 100 }, reset: true } );
+  ScrollReveal().reveal('.reveal1',{ delay: 100 , reset:true,});
+  ScrollReveal().reveal('.reveal2',{ delay: 300 , reset:true, });
+  ScrollReveal().reveal('.reveal3',{ delay: 500 , reset:true,});
+  ScrollReveal().reveal('.reveal4',{ delay: 700 , reset:true,});
+  ScrollReveal().reveal('.clickmore',{ delay: 900 , reset:true, origin: 'bottom' });
+  ScrollReveal().reveal('.rotate',{ delay: 300, rotate:{ x: 0, y: 0, z: 100 }, reset: true } );
   ScrollReveal().reveal('.footerSection',{ delay: 200 , origin: 'bottom' , reset: true, distance: '30px', desktop: false });
   ScrollReveal().reveal('.contactSection',{ delay: 200 , origin: 'top' , reset: true, distance: '30px', desktop: false } );
 
@@ -235,3 +234,44 @@ function navActive(link, section) {
 //         markers: true,
 //     }
 //   })
+
+let crousel1=document.querySelector(".crousel")
+let certificates=["./certificates/1758219679918.jpeg","./certificates/google agile essentail.PNG","./certificates/AI certificate_page-0001.jpg","./certificates/Design Promts.PNG","./certificates/frontend developer.jpg","./certificates/github certificate MTF TECHNOLOGY_page-0001.jpg","./certificates/google Ai essentail.PNG","./certificates/Google prompting essentials.PNG","./certificates/HTMLEssentialsv120250421-27-8f2knl_page-0001.jpg","./certificates/speed up data analysis and presentation.PNG","./certificates/UC-418274c3-4ca0-4257-9f6f-7be41f349cf6_page-0001.jpg","./certificates/Virtual Uni (SEO).PNG","./certificates/virtual freelance.PNG","./certificates/Discover the Art of Prompting.PNG","./certificates/Foundations of Agile Project Management.PNG","./certificates/maximize productivity Ai tool.PNG","./certificates/Use AI as a Creative or Expert Partner.PNG","./certificates/Implement the Scrum Framework.PNG"]
+
+for(let i in certificates)
+{
+    let certificateImages=document.createElement("img");
+    console.log(certificates[i]);
+    crousel1.appendChild(certificateImages)
+    certificateImages.src=certificates[i];
+}
+
+// const loco = new LocomotiveScroll({
+//   el: document.querySelector(".locomotive-scroll"),
+//   smooth: true
+// });
+// loco.scrollTo(0, 0, 0);
+// loco.on("scroll", ScrollUpdate => {
+//   console.log(ScrollUpdate);
+// });
+
+// Initialize Lenis
+// const lenis = new Lenis({
+//     autoRaf: true,
+//   });
+
+const lenis = new Lenis();
+  // Listen for the scroll event and log the event data
+//   lenis.on('scroll', (e) => {
+//     console.log(e);
+//   });
+
+  // Initialize Lenis
+
+// Use requestAnimationFrame to continuously update the scroll
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
+
+requestAnimationFrame(raf);
