@@ -269,9 +269,15 @@ const lenis = new Lenis();
   // Initialize Lenis
 
 // Use requestAnimationFrame to continuously update the scroll
-function raf(time) {
-  lenis.raf(time);
-  requestAnimationFrame(raf);
-}
+// function raf(time) {
+//   lenis.raf(time);
+//   requestAnimationFrame(raf);
+// }
 
-requestAnimationFrame(raf);
+// requestAnimationFrame(raf);
+
+// gsap.to(".crousel img",{
+//     marginbottom: "px",
+//     duration: "1",
+//     delay: "2s",
+// })
