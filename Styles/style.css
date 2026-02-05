@@ -1030,7 +1030,7 @@ input:checked+.slider:before {
   animation: moving-arrow-top 2s forwards infinite linear;
 }
 .timeline-section {
-  overflow: hidden;
+  /* overflow: hidden; */
   height: 300px;
   margin-top: 30px;
   overflow-y: scroll;

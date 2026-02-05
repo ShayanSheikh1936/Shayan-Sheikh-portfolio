@@ -260,24 +260,52 @@ for(let i in certificates)
 //     autoRaf: true,
 //   });
 
-const lenis = new Lenis();
+const lenis = new Lenis(
+  {
+    // lerp: 0.1,
+    smoothWheel: true,
+    wheelMultiplier: 0.7,
+    wheelEasing: true,
+    // wrapper: window,
+    // content: "document.body",
+    smooth: true,
+    direction: "vertical",
+    gestureDirection: "vertical",
+    smoothtTouch: true,
+    touchMultiplier: 2,
+    // infinite: false,
+    preventDefault: false,
+        prevent: (node) => {
+            return ( 
+            node.closest('.timeline') ||
+            node.closest('.skills-card-container')
+            )
+        }
+  }
+);
   // Listen for the scroll event and log the event data
-//   lenis.on('scroll', (e) => {
-//     console.log(e);
-//   });
+  lenis.on('scroll', (e) => {
+    console.log(e);
+  });
 
   // Initialize Lenis
 
 // Use requestAnimationFrame to continuously update the scroll
-// function raf(time) {
-//   lenis.raf(time);
-//   requestAnimationFrame(raf);
-// }
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
 
-// requestAnimationFrame(raf);
+requestAnimationFrame(raf);
 
 // gsap.to(".crousel img",{
 //     marginbottom: "px",
 //     duration: "1",
 //     delay: "2s",
+// })
+
+// document.querySelector(".timeline-section").addEventListener("wheel", (e)=>
+// {
+//     e.preventDefault();
+//     timeline.scrollTop += e.deltaY
 // })
