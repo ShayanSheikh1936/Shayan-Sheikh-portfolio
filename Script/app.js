@@ -150,7 +150,7 @@ closeBtn.addEventListener("click",()=>
 })
 sidebar.addEventListener("domContentLoaded",()=>{
     // document.body.classList.add("close-sidebar")
-    console.log("shayan"); 
+    // console.log("shayan"); 
     document.body.classList.add("close-sidebar");  
 })
 // -------------------------------------------------------------------
@@ -181,7 +181,7 @@ ScrollReveal({
 document.querySelectorAll(".certificate").forEach((e)=>{
     e.addEventListener("click", ()=>
     {
-        console.log("work");
+        // console.log("work");
         
         // document.querySelector(".allCertificates").className.add("openCertificatecrousel")
         document.querySelector(".allCertificate").classList.add("openCertificatecrousel")
@@ -241,7 +241,7 @@ let certificates=["./certificates/1758219679918.jpeg","./certificates/google agi
 for(let i in certificates)
 {
     let certificateImages=document.createElement("img");
-    console.log(certificates[i]);
+    // console.log(certificates[i]);
     crousel1.appendChild(certificateImages)
     certificateImages.src=certificates[i];
 }
@@ -285,7 +285,7 @@ const lenis = new Lenis(
 );
   // Listen for the scroll event and log the event data
   lenis.on('scroll', (e) => {
-    console.log(e);
+    // console.log(e);
   });
 
   // Initialize Lenis
