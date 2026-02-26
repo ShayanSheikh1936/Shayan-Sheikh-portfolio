@@ -19,6 +19,8 @@
   --backgound-picture: url(../Pictures/map-light.png);
   --call-image: url(../Pictures/call.png);
   --scheme-color: #2b2b2b;
+  --dots-image: url(../Pictures/dots\ 1.svg);
+  --arrow-image: url(../Pictures/bn-arrow.png);
 }
 .dark-mode
 {
@@ -32,6 +34,8 @@
   --backgound-picture: url(../Pictures/map.png);
   --call-image: url(../Pictures/call-dark.png);
   --scheme-color: #2b2b2b;
+  --dots-image: url(../Pictures/dots\ 2.svg);
+  --arrow-image: url(../Pictures/bn-arrow\ 1\ \(1\).png);
 }
 
 body {
@@ -414,7 +418,11 @@ input:checked+.slider:before {
   background-color: var(--primary-color);
 }
 
-.redirect-freelance img {
+.redirect-freelance .dots-image {
+  background-image: var(--dots-image);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   opacity: 0.3;
   height: 100px;
   top: -40px;
@@ -539,7 +547,13 @@ input:checked+.slider:before {
   transition: 0.5s ease-in-out;
 }
 
-.video-play img {
+.video-play .arrow-image {
+  width: 60px;
+  height: 65px;
+  /* background-position: center; */
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  background-image: var(--arrow-image);
   animation: rotate 3s infinite;
 }
 
